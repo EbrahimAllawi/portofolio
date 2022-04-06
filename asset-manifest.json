@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portofolio/static/css/main.84b5e04a.css",
+    "main.js": "/portofolio/static/js/main.f85e9c1a.js",
+    "static/js/27.37d93c10.chunk.js": "/portofolio/static/js/27.37d93c10.chunk.js",
+    "service-worker.js": "/portofolio/service-worker.js",
+    "index.html": "/portofolio/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.84b5e04a.css",
+    "static/js/main.f85e9c1a.js"
+  ]
+}
