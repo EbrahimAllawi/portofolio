@@ -1,0 +1,94 @@
+@import url('./variable.css');
+@media only screen and (max-width: 600px) {
+    .app {
+        display: grid;
+        row-gap: 15px;
+        grid-template-areas: 
+        "appBar appBar"
+        "nav information"
+        ;
+        grid-template-rows: 60vw;
+        grid-template-columns: 38px;
+    }
+    .appbar .avatar {
+        left: 50%;
+        transform: translateX(-47.5px);
+    }
+    .uiMadeBy {
+        position: absolute !important;
+        left: 5px;
+        bottom: -10px;
+        background-color: var(--whiteGreen);
+        padding: 3px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .app {
+        width: 600px;
+    }
+
+    .appbar .avatar {
+        top: 0 !important;
+        left: 24px;
+
+    }
+    .uiMadeBy {
+        bottom: 17px;
+        left: 140px;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: Segoe UI;
+}
+
+.commingSoon {
+    font-size: 30px;
+}
+
+.app {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+/*     
+    margin: 0 auto;
+    position: relative; */
+}
+
+.appBarCurve{
+    width: 100%;
+}
+
+.appbar {
+    position: relative;
+    grid-area: appBar;
+}
+.appbar .avatar {
+    position: absolute;
+    top: 22vw;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 5px solid var(--blue);
+    background-color: white;
+}
+
+.uiMadeBy {
+    position: relative;
+    width: max-content;
+}
+
+.uiMadeBy .name {
+    font-size: 15px;
+    color: var(--red);
+}

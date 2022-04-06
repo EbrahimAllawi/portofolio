@@ -1,0 +1,75 @@
+@import url('./variable.css');
+@media only screen and (max-width: 600px) {
+    .main .primaryInfo .name {
+        margin: 10px 5px;
+    }
+    .main .primaryInfo .stack {
+        margin: 10px 25px;
+    }
+    .main .resume {
+        margin: 0 25px;
+        font-size: 13px;
+
+    }
+    .main .contacts {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 38px);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .main {
+        position: relative;
+        top: 12px;
+        display: grid;
+        grid-template-areas: 
+        "primaryInfo primaryInfo"
+        "resume contacts"
+        ;
+    }
+    .main .primaryInfo {
+        grid-area: primaryInfo;
+        position: relative;
+        left: 24%;
+        width: max-content;
+    }
+    .main .resume {
+        grid-area: resume;
+        width: 203px;
+        font-size: 15px;
+    }
+    .main .contacts {
+        grid-area: contacts;
+    }
+}
+
+
+.main .primaryInfo {
+
+}
+.main .primaryInfo .name {
+    color: var(--green);
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .primaryInfo .stack {
+    font-size: 15px;
+    color: var(--gray);
+}
+.main .resume {
+    color: var(--black);
+}
+.main .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .contacts .contact {
+    display: flex;
+    padding: 5px;
+}
+.main .contacts .contact > a {
+    color: var(--red);
+    margin-left: 20px;
+}
