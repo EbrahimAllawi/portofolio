@@ -14,7 +14,27 @@
     .navbar .button {
         width: 25px;
         height: 25px;
+        display: flex;
+        position: relative;
+
         /* background-color: black; */
+    }
+    /* .navbar #home::after {
+        content: "";
+        position: absolute;
+        right: -9px;
+        top: -17px;
+        width: 2px;
+        height: 60px;
+        background-color: var(--green);
+    } */
+    .active {
+        position: absolute;
+        right: -9px;
+        top: -17px;
+        width: 2px;
+        height: 60px;
+        background-color: var(--green);
     }
 }
 
@@ -43,10 +63,18 @@
         /* background-color: black; */
         
     }
+    .activeTabWidthScreen {
+        background-color: var(--whiteBlue);
+        border-radius: 5px;
+    }
 }
 
 .navbar {
     /* background-color: red; */
     display: flex;
     grid-area: nav;
+}
+
+.navbar .button {
+    cursor: pointer;
 }

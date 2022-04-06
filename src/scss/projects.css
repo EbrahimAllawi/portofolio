@@ -1,0 +1,52 @@
+@import url('./variable.css');
+@media only screen and (max-width: 600px) {
+    .projects {
+        left: 5px;
+        width: calc(100% - 5px);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .projects {
+        top: 40px;
+    }
+}
+
+.projects {
+    position: relative;
+    font-size: 12px;
+
+}
+.project {
+    position: relative;
+    padding: 5px 0;
+    width: 175px;
+    height: 90px;
+    border: .5px solid var(--blue);
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects .project .name {
+    color: var(--blue);
+    font-size: 17px;
+}
+.projects .project .date {
+    color: var(--kamon);
+
+}
+.projects .project .tags {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--blue);
+    display: flex;
+    border: .5px var(--blue) solid;
+    border-radius: 8px;
+    padding: 5px;
+}
+.projects .project .tags .tag {
+    margin: 0 5px;
+}

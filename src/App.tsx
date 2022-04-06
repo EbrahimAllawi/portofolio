@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Link, Route, Routes,HashRouter } from "react-router-dom";
+
 import AppBar from './components/appBar';
 import Information from './components/Information';
 import NavBar from './components/NavBar';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
-
 
 import appbar_narrow from './img/appbar_narrow.svg';
 import appbar_wide from './img/appbar_wide.svg';
@@ -27,11 +29,22 @@ function App() {
   return (
     <>
       <div className="app">
-        <div className='commingSoon'>under constraction</div>
-        {/* <AppBar matchMedia={matchMedia} widthScreen={widthScreen} /> */}
+        <HashRouter>
+        {/* <div className='commingSoon'>under constraction</div> */}
+
+        <AppBar matchMedia={matchMedia} widthScreen={widthScreen} />
+        {/* <a href='#/skills'>sssss</a> */}
+        <div className="content">
+          <Routes>
+            <Route path='/' element={<Information/>}/>
+            <Route path='/skills' element={<Skills matchMedia={matchMedia} />}/>
+            <Route path='/projects' element={<Projects/>}/>
+          </Routes>
+        </div>
         {/* <Information/> */}
         {/* <Skills matchMedia={matchMedia} /> */}
-        {/* <NavBar/> */}
+        <NavBar matchMedia={matchMedia}/>
+        </HashRouter>
       </div>
     </>
   );

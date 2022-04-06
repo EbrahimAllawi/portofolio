@@ -86,11 +86,10 @@ export default function Skills(props: any) {
 
   function typeShapeProgress(skill:any) {
     if(matchMedia) {
-      console.log('match')
+      // console.log('match')
       return <PieSkill skill={skill}/>
-
     }
-    console.log('not match')
+    // console.log('not match')
     return <RectangleSkill skill={skill}/>
 
   }
@@ -103,10 +102,10 @@ export default function Skills(props: any) {
   }
 
   var skillsInfo = [
-    skillInfo('Design pattern', 40),
+    skillInfo('Design pattern', 29),
     skillInfo('version control', 60),
     skillInfo('HTML CSS JS', 80),
-    skillInfo('node js', 80),
+    skillInfo('node js', 75),
     skillInfo('JWT', 60),
     skillInfo('Make,work with api', 60),
     skillInfo('MongoDB', 60),
