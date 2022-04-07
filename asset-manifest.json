@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.84b5e04a.css",
-    "main.js": "/portofolio/static/js/main.f85e9c1a.js",
+    "main.css": "/portofolio/static/css/main.d66504e2.css",
+    "main.js": "/portofolio/static/js/main.b2ac36a9.js",
     "static/js/27.37d93c10.chunk.js": "/portofolio/static/js/27.37d93c10.chunk.js",
     "service-worker.js": "/portofolio/service-worker.js",
-    "index.html": "/portofolio/index.html"
+    "static/media/facebook.svg": "/portofolio/static/media/facebook.f772b31c50e689ece43b72c0bc84a7b8.svg",
+    "static/media/codepen.svg": "/portofolio/static/media/codepen.bb1735cc6c32f929127fce06f663b49a.svg",
+    "static/media/projects.webp": "/portofolio/static/media/projects.f1607da6e887f3c10de5.webp",
+    "static/media/home.webp": "/portofolio/static/media/home.80dda335899e41782de2.webp",
+    "static/media/skills.webp": "/portofolio/static/media/skills.a4d8e5c3ad41bd88a8bd.webp",
+    "index.html": "/portofolio/index.html",
+    "static/media/appbar_narrow.svg": "/portofolio/static/media/appbar_narrow.e76499bd119e442dc417891ce29bf3fa.svg",
+    "static/media/appbar_wide.svg": "/portofolio/static/media/appbar_wide.c369737ccecc4f97d95b607c68158234.svg"
   },
   "entrypoints": [
-    "static/css/main.84b5e04a.css",
-    "static/js/main.f85e9c1a.js"
+    "static/css/main.d66504e2.css",
+    "static/js/main.b2ac36a9.js"
   ]
 }
