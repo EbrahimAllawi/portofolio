@@ -44,6 +44,7 @@ function Button(props:IUrl) {
     const {icon, url, id, activeTab, setActiveTab, matchMedia} = props.props
 
     useEffect(()=> {
+        setActiveTab(localStorage.getItem('activeTab'))
         // console.log(activeTab)
         var rectangleActive = document.getElementsByClassName('rectangleActive')
         var buttonNav = document.getElementsByClassName('button')
@@ -72,6 +73,7 @@ function Button(props:IUrl) {
 
     function goTo(url:string, id:string, e: any) {
         window.location.href = url
+        localStorage.setItem('activeTab',`${id}Active`)
         setActiveTab(`${id}Active`)
         // console.log('=========')
     }

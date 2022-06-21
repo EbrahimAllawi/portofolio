@@ -6,7 +6,6 @@ interface IPropsproject {
     name: string
     date: string  
     url: string
-    nameUrl: string
     tags: Array<string>
 }
 
@@ -16,7 +15,11 @@ function projectInfo(info: IPropsproject) {
 }
 export default function Projects() {
     var projectsInfo = [
-        projectInfo({name: 'Wallet APP', date: '1/2/2000', url: 'https://ebrahimallawi.github.io/portofolio/', nameUrl:'url', tags:['Rest api','ts']})
+        projectInfo({name: 'Wallet App', date: '04/2021', url: 'https://e-wallet-app.netlify.app', tags:['Rest api','Typscript']}),
+        projectInfo({name: 'tax Calculator', date: '04/2022', url: 'https://ebrahimallawi.github.io/taxCalculator/', tags:['React ts','Redux Toolkit']}),
+        projectInfo({name: 'portofolio', date: '06/2022', url: 'https://ebrahimallawi.github.io/portofolio/', tags:['React ts','UI']}),
+        projectInfo({name: 'storeA', date: '02/2022', url: 'https://ebrahimallawi.github.io/storeA/', tags:['Flutter','API']}),
+        projectInfo({name: 'website company', date: '5/2021', url: 'https://ebrahimallawi.github.io/websiteCompany/', tags:['react','ant design']}),
     ]
     var projects = projectsInfo.map((i)=> {
 
@@ -30,7 +33,7 @@ export default function Projects() {
 
         return (
             <>
-                <Project name={i.name} date={i.date} url={i.url} nameUrl={i.nameUrl} tags={i.tags}  />
+                <Project name={i.name} date={i.date} url={i.url} tags={i.tags}  />
             </>
         )
     })
@@ -44,7 +47,7 @@ export default function Projects() {
 }
 
 function Project(props:IPropsproject) {
-    const {name, date, url, nameUrl, tags} = props
+    const {name, date, url, tags} = props
     var tag = tags.map((i)=> {
         return (
             <>

@@ -2,6 +2,9 @@
 @media only screen and (max-width: 600px) {
     .projects {
         left: 5px;
+        align-content: start;
+        justify-content: center;
+        grid-gap: 5px;
         width: calc(100% - 5px);
     }
 }
@@ -9,13 +12,19 @@
 @media only screen and (min-width: 601px) {
     .projects {
         top: 40px;
+        margin: 5px 5px;
+        justify-content: center;
+        grid-gap: 5px;
     }
 }
 
 .projects {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     font-size: 12px;
 
+    /* display: flex; */
 }
 .project {
     position: relative;

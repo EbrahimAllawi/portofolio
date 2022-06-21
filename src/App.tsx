@@ -34,13 +34,12 @@ function App() {
 
         <AppBar matchMedia={matchMedia} widthScreen={widthScreen} />
         {/* <a href='#/skills'>sssss</a> */}
-        <div className="content">
+
           <Routes>
             <Route path='/' element={<Information/>}/>
             <Route path='/skills' element={<Skills matchMedia={matchMedia} />}/>
             <Route path='/projects' element={<Projects/>}/>
           </Routes>
-        </div>
         {/* <Information/> */}
         {/* <Skills matchMedia={matchMedia} /> */}
         <NavBar matchMedia={matchMedia}/>
