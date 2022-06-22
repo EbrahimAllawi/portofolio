@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portofolio/static/css/main.d78aad97.css",
-    "main.js": "/portofolio/static/js/main.62c4f521.js",
+    "main.js": "/portofolio/static/js/main.4fa3a6ad.js",
     "static/js/27.37d93c10.chunk.js": "/portofolio/static/js/27.37d93c10.chunk.js",
     "service-worker.js": "/portofolio/service-worker.js",
     "static/media/avatar.jpg": "/portofolio/static/media/avatar.16e7d2274291b29ed226.jpg",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.d78aad97.css",
-    "static/js/main.62c4f521.js"
+    "static/js/main.4fa3a6ad.js"
   ]
 }
