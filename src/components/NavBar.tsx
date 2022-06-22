@@ -53,12 +53,12 @@ function Button(props:IUrl) {
             rectangleActive.item(x)?.classList.remove('active')
             buttonNav.item(x)?.classList.remove('activeTabWidthScreen')
         }
-
+        // active tab small screen
         if(matchMedia) {
             document.getElementById(activeTab)?.classList.add('active')
             return
         }
-
+        // active tab large screen
         if(activeTab == 'homeActive') {
             document.getElementById('home')?.classList.add('activeTabWidthScreen')
         }
@@ -75,7 +75,6 @@ function Button(props:IUrl) {
         window.location.href = url
         localStorage.setItem('activeTab',`${id}Active`)
         setActiveTab(`${id}Active`)
-        // console.log('=========')
     }
 
     return (
